@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* All varibales to be used , from the aggreable branding color and font type */
+
+:root{
+  --color-bg-1 : #121212;
+  --color-bg-2 : #242424;
+  --color-brand : #e7b837;
+  --color-brand-light : #dbb959;
+  --color-body : #444 ;
+  --color-border : rgba(255,255,255,0);
+  --color-heading : #fff;
+  --font-main: "plus Jakarta sans" ;
+  --border-radius : 32px; 
+}
+
+/* Body styling */
+
+body{
+  background-color: var(--color-bg-1);
+  color: var(--color-body);
+  font-family: var(--font-main);
+  line-height: 1.7;
+}
+
+/* All heading styling */
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+
+a{
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--color-brand-light);
+}
+
+img{
+  width: 100%;
+}
+
+section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.ri-stack-fill{
+  color:var(--color-brand)
+}
+
+/* Navbar */
+
+
+.navbar{
+  background-color: var(--color-bg-1);
+}
+
+/* Button style */
+
+.btn{
+  padding: 12px 24px;
+}
+
+.btn-brand{
+  background-color: var(--color-brand);
+  color: var(--color-bg-1);
+  font-weight: 700;
+  border-radius: 100px;
+}
+
+.btn-brand:hover{
+  background-color: var(--color-brand-light);
+  border-color: var(--color-brand-light);
+  color: var(--color-bg-1);
+}
+
+/* About sytle */
+
+#about h1{
+  font-weight: 800;
+}
+
+#about p{
+  max-width: 600px;
+  margin: 24px auto;
+}
+
+#about .input-group{
+  background-color: var(--color-bg-2);
+  padding: 12px;
+  border-radius: 100px;
+  margin-bottom: 120px;
+}
+
+#about .input-group .btn{
+  border-radius: 100px;
+}
+
+#about .form-control{
+  background-color: transparent;
+  border-color:transparent;
+  color: var(--color-body);
+}
+
+#about .form-control:focus{
+  box-shadow: none;
+}
+
+#about .form-control::placeholder {
+  color: var(--color-placeholder); 
+  opacity: 1; 
+}
+
+.bg-image{
+  min-height: 450px;
+  background-image: url(../images/cover-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Section title */
+
+.section-title{
+  margin-bottom: 40px;
+}
+
+.section-title h6{
+  background-color: var(--color-brand);
+  color: var(--color-bg-1);
+  padding: 8px 16px;
+  display: inline-block;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 800;
+  
+}
+
+.section-title p{
+  max-width: 700px;
+}
+
+
+.service{
+  border-radius: var(--border-radius);
+  background-color: var(--color-bg-2);
+}
+
+
+.icon-box{
+  background-color: rgba(255,255,255,0.1);
+  width: 74px;
+  height: 74px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  color: var(--color-heading);
+  border-radius: 100px;
+  margin-bottom: 14px;
+}
+
+
+.features-list{
+  list-style: none;
+  padding: 0;
+}
+
+.icon-box.sm{
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+}
+
+
+/* features style */
+
+#Features .row{
+  margin-top: 8px;
+}
+
+.border-bottom{
+  border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+}
